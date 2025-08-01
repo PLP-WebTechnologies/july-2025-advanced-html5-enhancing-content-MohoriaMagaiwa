@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohoria Magaiwa - Profile & Contact</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    fieldset {
+      margin-top: 20px;
+      padding: 10px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 6px;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Personal Web Page</h1>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      My name is Mohoria Magaiwa. I’m an IT student pursuing a Bachelor's in Business Information Technology. I'm passionate about web development, backend systems, and data. I'm also a 3D artist specializing in product visualization. I love building useful tools like news feed platforms and I'm working towards becoming a system engineer or a data analyst.
+    </p>
+    <img src="IMG_4929.JPG" alt="Profile photo of Mohoria" width="200">
+  </section>
+
+  <section>
+    <h2>Quick Facts</h2>
+    <table>
+      <tr>
+        <th>Fact</th>
+        <th>Detail</th>
+      </tr>
+      <tr>
+        <td>Hometown</td>
+        <td>Nairobi</td>
+      </tr>
+      <tr>
+        <td>Favorite Language</td>
+        <td>Python (Django Framework)</td>
+      </tr>
+      <tr>
+        <td>Hobby</td>
+        <td>3D Product Visualization & Backend Development</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>My Skills</h2>
+    <ul>
+      <li>HTML5 & CSS3</li>
+      <li>Python (Django)</li>
+      <li>SQLite & Database Management</li>
+      <li>JavaScript (Beginner Level)</li>
+      <li>Git & GitHub Version Control</li>
+      <li>Form Design & Validation</li>
+      <li>3D Modeling & Product Visualization</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Favorite Audio & Video</h2>
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+
+    <h3>Video</h3>
+    <video width="320" height="240" controls>
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name" minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter a valid email" autocomplete="on">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Preferences</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required pattern="^[a-zA-Z0-9]{5,12}$" placeholder="5-12 alphanumeric characters">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="At least 6 characters">
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell me about yourself..."></textarea>
+
+        <label for="readonly-field">System ID (Read Only):</label>
+        <input type="text" id="readonly-field" name="readonly-field" value="SYS-1002" readonly>
+      </fieldset>
+
+      <input type="submit" value="Submit Form">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mohoria Magaiwa</p>
+  </footer>
+
+</body>
+</html>
